@@ -24,6 +24,11 @@ h1 {
   font-weight: 800;
   font-style: italic;
 }
+@media (max-width: 87.4375em) {
+  h1 {
+    font-size: 48px;
+  }
+}
 
 p {
   font-size: 25px;
