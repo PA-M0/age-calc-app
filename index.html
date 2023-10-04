@@ -26,6 +26,7 @@
   />
 
   <link rel="stylesheet" type="text/css" href="app/css/style.css" />
+  <script src="/age-calc-app/app/js/script.js" defer></script>
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -37,40 +38,51 @@
 <body>
   <main>
    <div class="container-fluid ">
-      <section class="row">
-        <div class="col-3">
-
-          <label for="day" class="p" >DAY</label>
-          <input type="text" id="day" class="form-control"  aria-label="Username">
+      <section>
+        <div class="row" id="my_form">
+          <div class="col-3 form-group">
+            <label for="day" >DAY</label>
+            <input type="number" name="day" id="day" class="form-control" placeholder="DD" aria-label="Username" maxlength="2" minlength="1"
+                   required>
+          </div>
+          <div class="col-3 d-inline-block form-group">
+            <label for="month">MONTH</label>
+            <input type="number" id="month" name="month" class="form-control" placeholder="MM"  aria-label="Username" maxlength="2" minlength="1"
+                   required>
+         </div>
+          <div class="col-3 d-inline-block form-group">
+            <label for="year">YEAR</label>
+            <input type="number" id="year" name="year" class="form-control" placeholder="YYYY"  aria-label="Username" maxlength="4" minlength="1"
+                   required>
+          </div>
+          <div class="d-flex  flex-row align-items-stretch">
+            <hr style="width: 85%;">
+            <div>
+              <button onclick="checkInputs()" style="background-color: var(--purple); width:72px; height: 72px;"  class="btn rounded-circle position-relative">
+                <img class="position-absolute" style="left:20%; top:20%;" src="../age-calc-app/assets/images/icon-arrow.svg" width="44px" height="44px" alt="arrow">
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="col-3 d-inline-block">
-          <label for="month">MONTH</label>
-          <input type="text" id="month" class="form-control"  aria-label="Username">
-       </div>
-        <div class="col-3 d-inline-block">
-          <label for="year">YEAR</label>
-          <input type="text" id="year" class="form-control "  aria-label="Username">
-        </div>
-
       </section>
-     <div class="d-flex  flex-row align-items-stretch">
-        <hr style="width: 85%;">
-        <div style="background-color: var(--purple); width:72px; height: 72px;" class="rounded-circle position-relative">
-          <img class="position-absolute" style="left:20%; top:20%;" src="../age-calc-app/assets/images/icon-arrow.svg" width="44px" height="44px" alt="arrow">
-        </div>
-     </div>
+
+
      <section>
        <div>
-         <h1>-- years</h1>
+         <h1 class=" d-inline-block" id="resYear" style="color: var(--purple);">--</h1>
+         <h1 class="d-inline-block"> years</h1>
        </div>
        <div>
-         <h1>-- months</h1>
+         <h1 class=" d-inline-block" id="resMonth" style="color: var(--purple);">--</h1>
+         <h1 class="d-inline-block"> months</h1>
        </div>
        <div>
-         <h1>-- days</h1>
+         <h1 class=" d-inline-block" id="resDay" style="color: var(--purple);">--</h1>
+         <h1 class="d-inline-block"> days</h1>
        </div>
      </section>
    </div>
+
   </main>
   Day
   DD
