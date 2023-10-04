@@ -1,3 +1,21 @@
+h1, h2, h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
 
+a, a:active, a:visited {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 3rem;
+  color: var(--off-black);
+}
+
+p {
+  font-size: 18px;
+  color: var(--input-color);
+}
 
 /*# sourceMappingURL=typography.css.map */

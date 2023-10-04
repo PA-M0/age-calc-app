@@ -1,0 +1,74 @@
+:root {
+  --purple:hsl(259, 100%, 65%);
+  --error: hsl(0, 100%, 67%);
+  --bg-color:hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --input-color: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+a, a:active, a:visited {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 3rem;
+  color: var(--off-black);
+  font-weight: 800;
+  font-style: italic;
+}
+
+p {
+  font-size: 25px;
+  color: var(--input-color);
+}
+
+label {
+  color: var(--input-color);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.7px;
+  font-style: normal !important;
+}
+
+:root {
+  --font-pop: "Poppins", sans-serif;
+}
+
+.container-fluid {
+  padding: 3rem;
+  max-width: 100%;
+  width: 40rem;
+  height: 32.5rem;
+  margin: 10rem auto;
+  background-color: var(--bg-color);
+  border-bottom-right-radius: 200px !important;
+  border-radius: 30px;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-pop);
+  background-color: var(--light-grey);
+}
+
+/*# sourceMappingURL=style.css.map */
