@@ -41,19 +41,22 @@
       <section>
         <div class="row" id="my_form">
           <div class="col-3 form-group">
-            <label for="day" >DAY</label>
+            <label id="day-label" for="day" >DAY</label>
             <input type="number" name="day" id="day" class="form-control" placeholder="DD" aria-label="Username" maxlength="2" minlength="1"
                    required>
+            <small id="day-notif" ></small>
           </div>
           <div class="col-3  d-inline-block form-group">
-            <label for="month">MONTH</label>
+            <label id="month-label" for="month">MONTH</label>
             <input type="number" id="month" name="month" class="form-control" placeholder="MM"  aria-label="Username" maxlength="2" minlength="1"
                    required>
+            <small id="month-notif" ></small>
          </div>
           <div class="col-3  d-inline-block form-group">
-            <label for="year">YEAR</label>
+            <label for="year" id="year-label">YEAR</label>
             <input type="number" id="year" name="year" class="form-control" placeholder="YYYY"  aria-label="Username" maxlength="4" minlength="1"
                    required>
+            <small id="year-notif" ></small>
           </div>
           <div class="d-flex  flex-row align-items-stretch">
             <hr style="width: 85%;">
