@@ -132,8 +132,38 @@ function invalidition(invalidDay, invalidMonth, invalidYear) {
         invalid_change_style_border_year()
     }
 }
+const is_empty = () =>{
+    if((day.value === "") || (month.value === "") || (year.value === ""))
+        return 1
+    return 0
+}
+
+const empty_notification = ()=>{
+
+    if(day.input === undefined) {
+        const empty_day_notif = () => document.getElementById('day-notif').innerHTML = "This field is required"
+
+    }
+    if(month.input === undefined) {
+        const empty_month_notif = () => document.getElementById('month-notif').innerHTML = "This field is required"
+    }
+    if(year.input === undefined) {
+        const empty_year_notif = ()=>{
+            document.getElementById('year-notif').innerHTML = "This field is required"
+       console.log(11111)
+        }
+        empty_year_notif()
+
+    }
+
+
+}
 
 const checkInputs = function (){
+    if(is_empty()){
+        empty_notification()
+        return
+    }
     if (validition(day.value, month.value, year.value)){
         calcAge()
         valid_change_style_label_day()
